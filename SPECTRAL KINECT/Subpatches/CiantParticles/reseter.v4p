@@ -1,0 +1,121 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.1.dtd" >
+   <PATCH nodename="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\CiantParticles\reseter.v4p" filename="D:\Apu files\Vvvv\Diplomka\Data\reseter.v4p" systemname="reseter">
+   <BOUNDS height="3255" left="13155" top="2880" type="Window" width="3165">
+   </BOUNDS>
+   <NODE componentmode="Hidden" id="3" nodename="OnOpen (VVVV)" systemname="OnOpen (VVVV)">
+   <BOUNDS height="100" left="630" top="945" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="630" top="945" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="18315" top="1560" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="2" nodename="Keyboard (System Global)" systemname="Keyboard (System Global)">
+   <BOUNDS height="100" left="1020" top="615" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="1020" top="615" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="19650" top="1605" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="KeyCode" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="1" nodename="EQ (Value)" systemname="EQ (Value)">
+   <BOUNDS height="100" left="1380" top="945" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="1380" top="930" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="19035" top="1845" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="82">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="1" dstpinname="Input 1" srcnodeid="2" srcpinname="KeyCode">
+   </LINK>
+   <NODE componentmode="Hidden" id="0" nodename="OR (Boolean)" systemname="OR (Boolean)">
+   <BOUNDS height="100" left="855" top="1260" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="855" top="1260" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="17865" top="2055" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="0" dstpinname="Input 2" srcnodeid="1" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="0" dstpinname="Input 1" srcnodeid="3" srcpinname="Bang">
+   </LINK>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="390" top="2085" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="390" top="2085" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="resetOUT">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="6" dstpinname="Y Input Value" srcnodeid="0" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="7" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="90" type="Node" width="2505">
+   </BOUNDS>
+   <BOUNDS height="270" left="165" top="90" type="Box" width="2505">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|triggers reset on pressing &quot;r&quot; key|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="9">
+   <BOUNDS type="Node" left="1860" top="615" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1860" top="615" width="555" height="600">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="reset">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 3">
+   </LINK>
+   </PATCH>

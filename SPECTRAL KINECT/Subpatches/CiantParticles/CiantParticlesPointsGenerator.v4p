@@ -1,0 +1,267 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.1.dtd" >
+   <PATCH nodename="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\CiantParticles\CiantParticlesPointsGenerator.v4p">
+   <NODE componentmode="InABox" id="29" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="1410" top="1590" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="3945" top="1125" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="1410" top="1590" type="Box" width="810">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="256">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="particlesNumberSqrt">
+   </PIN>
+   </NODE>
+   <NODE id="28" nodename="LinearSpread (Spreads)" systemname="LinearSpread (Spreads)">
+   <BOUNDS height="0" left="1200" top="2325" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Spread Count" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="Block">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="27" nodename="Cross (2d)" systemname="Cross (2d)">
+   <BOUNDS height="0" left="1200" top="2745" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="X In" visible="1">
+   </PIN>
+   <PIN pinname="Y In" visible="1">
+   </PIN>
+   <PIN pinname="X Out" visible="1">
+   </PIN>
+   <PIN pinname="Y Out" visible="1">
+   </PIN>
+   <PIN pinname="Include Upper" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Include Lower" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Include Equal" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="27" dstpinname="X In" srcnodeid="28" srcpinname="Output">
+   </LINK>
+   <NODE id="25" nodename="I (Spreads)" systemname="I (Spreads)">
+   <BOUNDS height="0" left="3105" top="4335" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname=".. To [" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="24" nodename="IOBox (Node)" systemname="IOBox (Node)">
+   <BOUNDS height="0" left="555" top="5835" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="12480" top="8985" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="555" top="5835" type="Box" width="720">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="verticesOutput">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="20" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="3855" top="2280" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="9120" top="8295" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="1065" left="3855" top="2280" type="Box" width="1005">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="reset">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="28" dstpinname="Spread Count" hiddenwhenlocked="1" srcnodeid="29" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="19" nodename="Sqr (Complex)" systemname="Sqr (Complex)">
+   <BOUNDS height="0" left="3315" top="3885" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input Real" visible="1">
+   </PIN>
+   <PIN pinname="Output Real" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="19" dstpinname="Input Real" hiddenwhenlocked="1" srcnodeid="29" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="25" dstpinname=".. To [" hiddenwhenlocked="1" srcnodeid="19" srcpinname="Output Real">
+   </LINK>
+   <NODE componentmode="Hidden" id="16" nodename="S+H (Animation)" systemname="S+H (Animation)">
+   <BOUNDS height="270" left="1200" top="3600" type="Node" width="465">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="15" nodename="S+H (Animation)" systemname="S+H (Animation)">
+   <BOUNDS height="270" left="3105" top="4755" type="Node" width="465">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="27" dstpinname="Y In" srcnodeid="28" srcpinname="Output">
+   </LINK>
+   <NODE id="9" nodename="VertexBuffer (EX9.Geometry Join)" systemname="VertexBuffer (EX9.Geometry Join)">
+   <BOUNDS height="270" left="555" top="4155" type="Node" width="1995">
+   </BOUNDS>
+   <PIN pinname="Position XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Texture Coordinate 0 XY" visible="1">
+   </PIN>
+   <PIN pinname="Vertex Buffer" visible="1">
+   </PIN>
+   <PIN pinname="Normal XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Apply" visible="1">
+   </PIN>
+   <PIN pinname="Enable Texture Coordinate 1" slicecount="1" values="|2D TexCoords|">
+   </PIN>
+   <PIN pinname="Texture Coordinate 1 XY" slicecount="2" visible="1" values="0,0">
+   </PIN>
+   <PIN pinname="Enable Normal" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enable Texture Coordinate 2" slicecount="1" values="|No TexCoords|">
+   </PIN>
+   <PIN pinname="Texture Coordinate 2 XY" visible="1">
+   </PIN>
+   <PIN pinname="Enable Vertex Point Size" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Vertex Point Size" visible="1">
+   </PIN>
+   <PIN pinname="Enable Diffuse Color" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Diffuse Color" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="8" nodename="Mesh (EX9.Geometry Join)" systemname="Mesh (EX9.Geometry Join)">
+   <BOUNDS height="270" left="555" top="5280" type="Node" width="5115">
+   </BOUNDS>
+   <PIN pinname="Vertex Buffer" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Indices" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Apply" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="15" dstpinname="Set" hiddenwhenlocked="1" srcnodeid="20" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="16" dstpinname="Set" hiddenwhenlocked="1" srcnodeid="20" srcpinname="Y Output Value">
+   </LINK>
+   <BOUNDS height="7125" left="1515" top="3450" type="Window" width="9840">
+   </BOUNDS>
+   <NODE componentmode="Hidden" id="7" nodename="Vector (2d Join)" systemname="Vector (2d Join)">
+   <BOUNDS height="0" left="1200" top="3150" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="1200" top="3150" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="5325" top="5865" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="15" dstpinname="Input" srcnodeid="25" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="7" dstpinname="X" srcnodeid="27" srcpinname="X Out">
+   </LINK>
+   <LINK dstnodeid="7" dstpinname="Y" srcnodeid="27" srcpinname="Y Out">
+   </LINK>
+   <NODE componentmode="InABox" id="35" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5160" top="690" type="Node" width="5730">
+   </BOUNDS>
+   <BOUNDS height="3300" left="5160" top="690" type="Box" width="3930">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Points generator just creates a set of points with propper texture coordinates.&cr;&lf;It requieres a reset to apply new particle count.&cr;&lf;Later, on each of these vertexes I&apos;ll place a sprite to display a texture there.&cr;&lf;Each of these vertices will mean one texel on a texture with positions for particle system.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Indices" srcnodeid="15" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="24" dstpinname="Input Node" srcnodeid="8" srcpinname="Mesh">
+   </LINK>
+   <LINK dstnodeid="8" dstpinname="Apply" srcnodeid="20" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Apply" hiddenwhenlocked="1" srcnodeid="20" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="36" nodename="Switch (Node Input)" systemname="Switch (Node Input)">
+   <BOUNDS height="100" left="570" top="4860" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Vertex Buffer" srcnodeid="36" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="36" dstpinname="Input 2" srcnodeid="9" srcpinname="Vertex Buffer">
+   </LINK>
+   <LINK dstnodeid="36" dstpinname="Switch" srcnodeid="20" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="16" dstpinname="Input" srcnodeid="7" srcpinname="XY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
+   <BOUNDS type="Node" left="300" top="3330" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="300" top="3330" width="615" height="555">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Position XYZ">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="9" dstpinname="Texture Coordinate 0 XY">
+   </LINK>
+   </PATCH>
