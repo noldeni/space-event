@@ -1,0 +1,97 @@
+= Sonic PI Beispiele
+Ingo Nolden
+:doctype: article
+:encoding: utf-8
+:lang: en
+:toc: left
+:numbered:
+
+== Sonic PI
+
+Die folgenden Beispiele stammen aus der Sonic PI Hilfe.
+
+=== Acid
+
+Interessante kombination von Synths. Vielleicht etwas schnell.
+
+=== Ambient Experiment
+
+Einfacher, klarer Ambient background.
+
+=== *Compus Beats
+
+Eventuell als Background geeignet.
+
+=== Wob Ryth
+
+Mit Chor ein netter Hintergrund.
+Nur der Wobble könnte ein guter Bass werden.
+
+Interessant: control w, phase: (ring 0.25, 0.5, 1, 2, 3).choose
+
+=== Monday Blues
+
+Komplettes Stück! (Faltermeyer?)
+
+Eventuell den "Refrain" benutzen?
+
+=== Reich Phase
+
+Ein Ring von Noten in zwei verschiedenen Tempi gespielt.
+Ergibt interessante Effekte.
+Evtl. mit anderen Synths probieren.
+
+=== Tron Bike
+
+Interessanter Effekt.
+
+=== Blimp Zones
+
+Baseline? Ohne piano? Ohne foo?
+
+=== Blip Rhythm
+
+Interessanter Hintergrund aber auch der Vordergrund ist evtl. zu verwenden.
+
+=== Shufflit
+
+Vielseitiges Stück. Evtl. nur :shuff nehmen und den :bd_tek rausnehmen?
+
+Oder nur :travelling? Oder :travelling und :comet?
+
+=== Tilburg 2
+
+Schnelles Stück aber mit vielen interessanten Elementen.
+
+=== Time Machine
+
+Interessante Effekte.
+
+=== Cloud Beat
+
+Sehr schönes Stück. Vielleicht als Background. Oder den Rhythmus als Basis nutzen. Die Melodie ist aber auch nicht schlecht.
+
+=== **Sonic Dreams
+
+Mehteiliges Stück, so nicht nutzbar, aber **jede Menge** toller Effekte und klasse Bass!
+
+== In-Thread
+
+Die folgenden Beispiele stammen aus dem In-Thread Forum.
+
+== Snippets
+
+.Basedrum
+
+[source,ruby]
+----
+load_sample :drum_heavy_kick
+
+live_loop :drums do
+  sample :drum_heavy_kick, rate: 0.75
+  sleep 0.5
+  sample :drum_heavy_kick
+  sleep 0.5
+end
+
+----
