@@ -19,6 +19,8 @@
    </PIN>
    <PIN pinname="Auto Aspect Ratio" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Fullscreen" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="2820" top="8070" width="0" height="0">
@@ -457,5 +459,29 @@
    <LINK srcnodeid="7" srcpinname="Output RGB" dstnodeid="64" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="7" dstpinname="ResetData" hiddenwhenlocked="0">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="150" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="4530" top="5415" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4530" top="5415" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Fullscreen">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="150" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Fullscreen">
    </LINK>
    </PATCH>
