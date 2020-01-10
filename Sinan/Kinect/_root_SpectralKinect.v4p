@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\space-event\SPECTRAL KINECT\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="252" scrolly="1380">
-   <BOUNDS height="9180" left="10572" top="1944" type="Window" width="7200">
+   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="420" scrolly="0">
+   <BOUNDS height="12075" left="18255" top="870" type="Window" width="8730">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="10" nodename="Renderer (EX9)" systemname="RENDERER (EX9)" stayontop="1">
    <BOUNDS height="100" left="2391" top="7476" type="Node" width="100">
    </BOUNDS>
    <BOUNDS height="1800" left="2391" top="7476" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="5520" left="0" top="0" type="Window" width="8256">
+   <BOUNDS height="16440" left="-7500" top="-16320" type="Window" width="29040">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -106,14 +106,14 @@
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Bang On StartUp|">
    </PIN>
    </NODE>
-   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="Hidden" id="43">
+   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="InAWindow" id="43">
    <BOUNDS type="Node" left="4491" top="2496" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
    <BOUNDS type="Box" left="4491" top="2496">
    </BOUNDS>
-   <BOUNDS type="Window" left="10584" top="0" width="11160" height="11868">
+   <BOUNDS type="Window" left="15540" top="0" width="11160" height="11865">
    </BOUNDS>
    </NODE>
    <NODE systemname="ResampleSkeleton" filename="Subpatches\ResampleSkeleton\ResampleSkeleton.v4p" nodename="Subpatches\ResampleSkeleton\ResampleSkeleton.v4p" componentmode="Hidden" id="41">
@@ -404,8 +404,8 @@
    </NODE>
    <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="143" dstpinname="Pause">
    </LINK>
-   <NODE id="7" componentmode="Hidden" filename="Subpatches\ParticleEffect.v4p" nodename="Subpatches\ParticleEffect.v4p" systemname="ParticleEffect">
-   <BOUNDS type="Window" left="9816" top="2280" width="14520" height="9480">
+   <NODE id="7" componentmode="InAWindow" filename="Subpatches\ParticleEffect.v4p" nodename="Subpatches\ParticleEffect.v4p" systemname="ParticleEffect">
+   <BOUNDS type="Window" left="2685" top="4440" width="14520" height="9480">
    </BOUNDS>
    <BOUNDS type="Node" height="270" left="2391" top="5751" width="1275">
    </BOUNDS>

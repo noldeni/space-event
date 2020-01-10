@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta27.dtd" >
-   <PATCH nodename="C:\Users\clone\Downloads\CiantParticles4\CiantParticles\CiantParticles.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\CiantParticles\CiantParticles.v4p" scrollx="1905" scrolly="0">
    <BOUNDS height="13665" left="14025" top="510" type="Window" width="16410">
    </BOUNDS>
    <NODE componentmode="InABox" id="11" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="ParticlesNumberSqrt" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="ParticlesNumberSqrt">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="12" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
@@ -41,7 +41,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|reset to initial  state|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|reset to initial  state|">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="39" nodename="Blend (EX9.RenderState)" systemname="Blend (EX9.RenderState)">
@@ -63,7 +63,7 @@
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="InitialPositionTexture" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="InitialPositionTexture">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="74" nodename="IOBox (Node)" systemname="IOBox (Node)">
@@ -75,7 +75,7 @@
    </BOUNDS>
    <PIN pinname="Input Node" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="OutputRender" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="OutputRender">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="75" nodename="IOBox (Node)" systemname="IOBox (Node)">
@@ -89,7 +89,7 @@
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="particleTexture" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="particleTexture">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="77" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
@@ -99,11 +99,11 @@
    </BOUNDS>
    <BOUNDS height="160" left="11730" top="6300" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="Blend">
+   <PIN pinname="Input Enum" slicecount="1" values="Add">
    </PIN>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="DrawMode" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="DrawMode">
    </PIN>
    </NODE>
    <LINK dstnodeid="39" dstpinname="Draw Mode" srcnodeid="77" srcpinname="Output Enum">
@@ -119,7 +119,7 @@
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="colorMultiple" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="colorMultiple">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="144" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -127,7 +127,7 @@
    </BOUNDS>
    <BOUNDS height="345" left="1470" top="10740" type="Box" width="2160">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|Draw Particles:|" encoded="0">
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|Draw Particles:|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -141,7 +141,7 @@
    </BOUNDS>
    <BOUNDS height="375" left="615" top="6420" type="Box" width="1830">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|Loop Particles:|" encoded="0">
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|Loop Particles:|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -151,13 +151,13 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="147" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="100" left="5850" top="120" type="Node" width="100">
+   <BOUNDS height="100" left="4005" top="405" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="2280" left="5850" top="120" type="Box" width="1275">
+   <BOUNDS height="4185" left="4005" top="405" type="Box" width="1275">
    </BOUNDS>
    <BOUNDS height="160" left="6270" top="6165" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="behaviourParameters" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="behaviourParameters">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="21">
    </PIN>
@@ -313,7 +313,7 @@
    </BOUNDS>
    <BOUNDS height="360" left="270" top="390" type="Box" width="2355">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|CIANT Particles|" encoded="0">
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|CIANT Particles|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -327,7 +327,7 @@
    </BOUNDS>
    <BOUNDS height="525" left="270" top="720" type="Box" width="3360">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|Martin Zrcek, Michal Máša, Andrej Boleslavsky &cr;&lf;CIANT Prague|" encoded="0">
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|Martin Zrcek, Michal Máša, Andrej Boleslavsky &cr;&lf;CIANT Prague|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -343,7 +343,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="viewportHeight" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="viewportHeight">
    </PIN>
    </NODE>
    <NODE id="175" nodename="AlphaTest (EX9.RenderState)" systemname="AlphaTest (EX9.RenderState)">
@@ -573,7 +573,7 @@
    </BOUNDS>
    <BOUNDS height="495" left="4320" top="8115" type="Box" width="1500">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|send positions back as new frame|" encoded="0">
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|send positions back as new frame|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -585,7 +585,7 @@
    </BOUNDS>
    <BOUNDS height="270" left="2970" top="9765" type="Box" width="1770">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|send positions to draw|" encoded="0">
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|send positions to draw|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -601,7 +601,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="BoundingBoxSize" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="BoundingBoxSize">
    </PIN>
    <PIN pinname="X Output Value" visible="1">
    </PIN>
@@ -611,7 +611,7 @@
    </BOUNDS>
    <BOUNDS height="5700" left="11640" top="2010" type="Box" width="4935">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|behavioral parameters mean, how paricles move, their count, etc.&cr;&lf;Two Stallone nodes pick some parameters and send them to renderer, for other parameters, stallone make one big field and send as a parameter for shaders.&cr;&lf;&cr;&lf;&quot;ciantParticleLoop&quot; makes the main cycle that moves the particles. It gets particle positions from input texture and outputs new particle positions in a EX9 Layer.&cr;&lf;&cr;&lf;&quot;ciantParticleDraw&quot; gets particle positions in a texture from loop and a set of generated vertices from PointsGenerator. It places vertices on positions written in ParticlesStateTexture and places sprites on them. (sprites are small images in space oriented against camera)&cr;&lf;It can also multiply (darken) texture to add some contrast to your scene.&cr;&lf;&cr;&lf;Layer to texture (surprise:) creates a texture from a layer. Then it sends one copy to a ParticleDraw part and one copy to ParticleLoop as an input position and velocity for a new frame.&cr;&lf;&cr;&lf;BBOx size is sometihg you just don&apos;t change. It reffers to position stepsize (computation precision) and the whole box size (BBox).|" encoded="0">
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|behavioral parameters mean, how paricles move, their count, etc.&cr;&lf;Two Stallone nodes pick some parameters and send them to renderer, for other parameters, stallone make one big field and send as a parameter for shaders.&cr;&lf;&cr;&lf;&quot;ciantParticleLoop&quot; makes the main cycle that moves the particles. It gets particle positions from input texture and outputs new particle positions in a EX9 Layer.&cr;&lf;&cr;&lf;&quot;ciantParticleDraw&quot; gets particle positions in a texture from loop and a set of generated vertices from PointsGenerator. It places vertices on positions written in ParticlesStateTexture and places sprites on them. (sprites are small images in space oriented against camera)&cr;&lf;It can also multiply (darken) texture to add some contrast to your scene.&cr;&lf;&cr;&lf;Layer to texture (surprise:) creates a texture from a layer. Then it sends one copy to a ParticleDraw part and one copy to ParticleLoop as an input position and velocity for a new frame.&cr;&lf;&cr;&lf;BBOx size is sometihg you just don&apos;t change. It reffers to position stepsize (computation precision) and the whole box size (BBox).|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -645,7 +645,7 @@
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="TheWholeThingTransform" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="TheWholeThingTransform">
    </PIN>
    </NODE>
    <LINK dstnodeid="36" dstpinname="Transform" srcnodeid="187" srcpinname="Output Node">
@@ -677,7 +677,7 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="textureSubdivision" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="textureSubdivision">
    </PIN>
    </NODE>
    <LINK dstnodeid="36" dstpinname="Number of image subdivision inside texture XY" srcnodeid="190" srcpinname="Y Output Value">
@@ -703,7 +703,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|SpreadStyle(leave 1)|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|SpreadStyle(leave 1)|">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" hiddenwhenlocked="0" id="197" managers="" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
@@ -713,7 +713,7 @@
    </BOUNDS>
    <BOUNDS height="0" left="0" top="0" type="Window" width="0">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="zBuffer" encoded="0">
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" encoded="0" values="zBuffer">
    </PIN>
    <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
    </PIN>
@@ -735,7 +735,7 @@
    </PIN>
    <PIN pinname="SliceOffset" pintype="Input" slicecount="1" visible="0" values="0">
    </PIN>
-   <PIN pinname="Input Enum" pintype="Input" slicecount="1" visible="1" values="| ZBufferEnable|">
+   <PIN pinname="Input Enum" pintype="Input" slicecount="1" visible="1" values="ZBufferEnable">
    </PIN>
    <PIN pinname="Output Enum" pintype="Output" visible="1">
    </PIN>
@@ -743,15 +743,15 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="198" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="100" left="7710" top="6405" type="Node" width="100">
+   <BOUNDS height="100" left="8700" top="6405" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="240" left="7710" top="6405" type="Box" width="795">
+   <BOUNDS height="240" left="8700" top="6405" type="Box" width="795">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="1.1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="RandomizeVerticesSource" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="RandomizeVerticesSource">
    </PIN>
    </NODE>
    <LINK dstnodeid="5" dstpinname="Randomize vertices source" srcnodeid="198" srcpinname="Y Output Value">
@@ -765,7 +765,7 @@
    </BOUNDS>
    <BOUNDS height="3660" left="3780" top="120" type="Box" width="2070">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1) Particles Count &tab;.. [Power of 2]&cr;&lf;2) Particle Size      &tab;.. [ 0 .. 10 ]&cr;&lf;3) particle reTime &tab;.. [ .2 .. 100 ]&cr;&lf;4) alfa multiple     &tab;.. [ 0 .. 3 ]&cr;&lf;5) create stripes   &tab;.. [ 0.5 +-2]&cr;&lf;6) air continuity    &tab;.. [ 1 +-0.2]&cr;&lf;7) gravity            &tab;.. force [+-200]&cr;&lf;8) fuzzy amount   &tab;.. force&cr;&lf;9) fuzzy range -1  &tab;.. [ 0.2 .. 10 ]&cr;&lf;10) attract amount    .. force&cr;&lf;11) attract range  &tab;.. [ 0 .. 100 ]&cr;&lf;12) torque amont &tab;.. force&cr;&lf;13) torque2 amount   .. [ 5 .. 100 ]&cr;&lf;14) random spread&tab;.. [ 0 .. 5000 ]&cr;&lf;15) gravity X&cr;&lf;16) gravity Y&tab;.. forces&cr;&lf;17) gravity Z&cr;&lf;18) add X velocity&cr;&lf;19) add Y velocity&tab;.. [ 0 +-5000]&cr;&lf;20) add Z velocity&cr;&lf;21) ground|" encoded="0">
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|1) Particles Count &tab;.. [Power of 2]&cr;&lf;2) Particle Size      &tab;.. [ 0 .. 10 ]&cr;&lf;3) particle reTime &tab;.. [ .2 .. 100 ]&cr;&lf;4) alfa multiple     &tab;.. [ 0 .. 3 ]&cr;&lf;5) create stripes   &tab;.. [ 0.5 +-2]&cr;&lf;6) air continuity    &tab;.. [ 1 +-0.2]&cr;&lf;7) gravity            &tab;.. force [+-200]&cr;&lf;8) fuzzy amount   &tab;.. force&cr;&lf;9) fuzzy range -1  &tab;.. [ 0.2 .. 10 ]&cr;&lf;10) attract amount    .. force&cr;&lf;11) attract range  &tab;.. [ 0 .. 100 ]&cr;&lf;12) torque amont &tab;.. force&cr;&lf;13) torque2 amount   .. [ 5 .. 100 ]&cr;&lf;14) random spread&tab;.. [ 0 .. 5000 ]&cr;&lf;15) gravity X&cr;&lf;16) gravity Y&tab;.. forces&cr;&lf;17) gravity Z&cr;&lf;18) add X velocity&cr;&lf;19) add Y velocity&tab;.. [ 0 +-5000]&cr;&lf;20) add Z velocity&cr;&lf;21) ground|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -803,7 +803,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="rotationEnable" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="rotationEnable">
    </PIN>
    </NODE>
    <LINK dstnodeid="36" dstpinname="rotationEnable" srcnodeid="200" srcpinname="Y Output Value">
@@ -817,9 +817,11 @@
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="colorMultipleTexture" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="colorMultipleTexture">
    </PIN>
    </NODE>
    <LINK dstnodeid="36" dstpinname="ColorForQuads" srcnodeid="201" srcpinname="Output Node">
    </LINK>
+   <PACK Name="addonpack" Version="39.0.0">
+   </PACK>
    </PATCH>
