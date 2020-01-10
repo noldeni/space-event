@@ -1,0 +1,151 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="C:\Users\Admin\Desktop\VVVV Projekte\BeatTracker.v4p" filename="C:\data\xp\video\vvvv\examples\_questions from other people\beat detection_test.v4p" systemname="beat detection_test">
+   <BOUNDS height="6630" left="16665" top="9090" type="Window" width="5550">
+   </BOUNDS>
+   <NODE componentmode="Hidden" filename="%VVVV%\modules\vvvv group\Animation\Metronom (Animation).v4p" id="26" nodename="Metronom (Animation)" systemname="Metronom (Animation)">
+   <BOUNDS height="100" left="570" top="960" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="bang out" visible="1">
+   </PIN>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Timing (Debug)" nodename="Timing (Debug)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="1800" top="150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Total Runnning Time" visible="1">
+   </PIN>
+   <PIN pinname="Total Clock Filter Time" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="3540" top="1425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Total Runnning Time" dstnodeid="29" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="3285" top="1725" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="3285" top="2025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="30" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="31" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Total Runnning Time" dstnodeid="30" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="bang out" dstnodeid="31" dstpinname="Set">
+   </LINK>
+   <NODE systemname="IOBOX (VALUE ADVANCED)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
+   <BOUNDS type="Node" left="165" top="75" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="165" top="75" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="beat">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Bang">
+   </LINK>
+   <NODE systemname="IOBOX (VALUE ADVANCED)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="34">
+   <BOUNDS type="Node" left="1710" top="1875" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1710" top="1875" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="bang out" dstnodeid="34" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="FrameDelay (Animation Legacy)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="3945" top="1125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="bang out" dstnodeid="35" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Output 1" dstnodeid="29" dstpinname="Set">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="3030" top="2475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Period" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="37" dstpinname="Period">
+   </LINK>
+   <NODE systemname="IOBOX (VALUE ADVANCED)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
+   <BOUNDS type="Node" left="1620" top="2790" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1620" top="2790" width="930" height="2775">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="38" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="addonpack" Version="39.0.0">
+   </PACK>
+   <NODE systemname="BeatTracker" filename="BeatTracker.v4p" nodename="BeatTracker.v4p" componentmode="InAWindow" id="39">
+   <BOUNDS type="Node" left="0" top="0" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="40">
+   <BOUNDS type="Node" left="3240" top="3120" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3240" top="3120" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="bang">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Change" dstnodeid="40" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>
