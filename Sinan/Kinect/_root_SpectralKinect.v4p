@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="420" scrolly="0">
+   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="1020" scrolly="0">
    <BOUNDS height="12075" left="18255" top="870" type="Window" width="8730">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="10" nodename="Renderer (EX9)" systemname="RENDERER (EX9)" stayontop="1">
-   <BOUNDS height="100" left="2391" top="7476" type="Node" width="100">
+   <BOUNDS height="100" left="2436" top="8496" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="1800" left="2391" top="7476" type="Box" width="2400">
+   <BOUNDS height="1800" left="2436" top="8496" type="Box" width="2400">
    </BOUNDS>
    <BOUNDS height="16440" left="-7500" top="-16320" type="Window" width="29040">
    </BOUNDS>
@@ -25,11 +25,13 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
+   <PIN pinname="Show Cursor" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4056" top="8106" width="0" height="0">
+   <BOUNDS type="Node" left="4101" top="9126" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4056" top="8106" width="540" height="240">
+   <BOUNDS type="Box" left="4101" top="9126" width="540" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -41,25 +43,25 @@
    <LINK srcnodeid="10" srcpinname="Actual Backbuffer Width" dstnodeid="23" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="S (VALUE ADVANCED)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="3186" top="8106" width="100" height="100">
+   <BOUNDS type="Node" left="3231" top="9126" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" encoded="0" values="Height">
    </PIN>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="3186" top="8106">
+   <BOUNDS type="Box" left="3231" top="9126">
    </BOUNDS>
    <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="S (VALUE ADVANCED)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="3636" top="8106" width="100" height="100">
+   <BOUNDS type="Node" left="3681" top="9126" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" encoded="0" values="Width">
    </PIN>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="3636" top="8106">
+   <BOUNDS type="Box" left="3681" top="9126">
    </BOUNDS>
    <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
@@ -69,7 +71,7 @@
    <LINK srcnodeid="10" srcpinname="Actual Backbuffer Height" dstnodeid="37" dstpinname="Input">
    </LINK>
    <NODE systemname="ASPECTRATIO (TRANSFORM)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="4311" top="7464" width="100" height="100">
+   <BOUNDS type="Node" left="4356" top="8484" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Aspect Width" visible="1">
    </PIN>
@@ -106,7 +108,7 @@
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Bang On StartUp|">
    </PIN>
    </NODE>
-   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="InAWindow" id="43">
+   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="4491" top="2496" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
@@ -217,7 +219,7 @@
    <LINK srcnodeid="131" srcpinname="Count" dstnodeid="132" dstpinname="Input 1">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="134">
-   <BOUNDS type="Node" left="2391" top="6966" width="100" height="100">
+   <BOUNDS type="Node" left="2406" top="7641" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -225,8 +227,16 @@
    </PIN>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="134" dstpinname="Layer 1">
+   <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="134" dstpinname="Layer 1" linkstyle="Bezier">
+   <LINKPOINT x="2415" y="7110">
+   </LINKPOINT>
+   <LINKPOINT x="2415" y="7110">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="135">
    <BOUNDS type="Node" left="3951" top="6351" width="100" height="100">
@@ -238,7 +248,11 @@
    <BOUNDS type="Box" left="3951" top="6351">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="135" srcpinname="Layer" dstnodeid="134" dstpinname="Layer 2">
+   <LINK srcnodeid="135" srcpinname="Layer" dstnodeid="134" dstpinname="Layer 2" linkstyle="Bezier">
+   <LINKPOINT x="3945" y="7110">
+   </LINKPOINT>
+   <LINKPOINT x="2640" y="7110">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Morph To Random Pos" filename="Subpatches\Morph To Random Pos.v4p" nodename="Subpatches\Morph To Random Pos.v4p" componentmode="Hidden" id="139">
    <BOUNDS type="Node" left="4491" top="4851" width="0" height="0">
@@ -404,7 +418,7 @@
    </NODE>
    <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="143" dstpinname="Pause">
    </LINK>
-   <NODE id="7" componentmode="InAWindow" filename="Subpatches\ParticleEffect.v4p" nodename="Subpatches\ParticleEffect.v4p" systemname="ParticleEffect">
+   <NODE id="7" componentmode="Hidden" filename="Subpatches\ParticleEffect.v4p" nodename="Subpatches\ParticleEffect.v4p" systemname="ParticleEffect">
    <BOUNDS type="Window" left="2685" top="4440" width="14520" height="9480">
    </BOUNDS>
    <BOUNDS type="Node" height="270" left="2391" top="5751" width="1275">
@@ -463,9 +477,9 @@
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="7" dstpinname="ResetData" hiddenwhenlocked="0">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="150" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5814" top="6267" width="0" height="0">
+   <BOUNDS type="Node" left="3234" top="7647" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5814" top="6267" width="480" height="480">
+   <BOUNDS type="Box" left="3234" top="7647" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -529,7 +543,7 @@
    <LINK srcnodeid="151" srcpinname="Y Output Value" dstnodeid="7" dstpinname="fx on/off">
    </LINK>
    <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\nugets\VL.EditingFramework.2019.1.0-0959-g3a31ab0c51\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="153">
-   <BOUNDS type="Node" left="3720" top="6840" width="100" height="100">
+   <BOUNDS type="Node" left="6885" top="3015" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View" visible="1">
    </PIN>
@@ -537,15 +551,55 @@
    </PIN>
    <PIN pinname="Reset" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Initial Distance" slicecount="1" values="40">
+   <PIN pinname="Initial Distance" slicecount="1" values="200">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Far Plane" slicecount="1" values="500">
+   </PIN>
+   <PIN pinname="Initial FOV" slicecount="1" values="0.03">
+   </PIN>
+   <PIN pinname="Near Plane" slicecount="1" values="0.01">
    </PIN>
    </NODE>
-   <LINK srcnodeid="153" srcpinname="View" dstnodeid="10" dstpinname="View">
+   <LINK srcnodeid="153" srcpinname="View" dstnodeid="10" dstpinname="View" linkstyle="Bezier">
+   <LINKPOINT x="7040" y="5585">
+   </LINKPOINT>
+   <LINKPOINT x="3775" y="6175">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="153" srcpinname="Projection" dstnodeid="10" dstpinname="Projection">
+   <LINK srcnodeid="153" srcpinname="Projection" dstnodeid="10" dstpinname="Projection" linkstyle="Bezier">
+   <LINKPOINT x="7205" y="5585">
+   </LINKPOINT>
+   <LINKPOINT x="3940" y="6175">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="153" srcpinname="View" dstnodeid="7" dstpinname="View">
+   <LINK srcnodeid="153" srcpinname="View" dstnodeid="7" dstpinname="View" linkstyle="Bezier">
+   <LINKPOINT x="7055" y="4205">
+   </LINKPOINT>
+   <LINKPOINT x="2950" y="4795">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="153" srcpinname="Projection" dstnodeid="7" dstpinname="Projection">
+   <LINK srcnodeid="153" srcpinname="Projection" dstnodeid="7" dstpinname="Projection" linkstyle="Bezier">
+   <LINKPOINT x="7220" y="4205">
+   </LINKPOINT>
+   <LINKPOINT x="3190" y="4795">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="HitBoxes" filename="Subpatches\HitBoxes.v4p" nodename="Subpatches\HitBoxes.v4p" componentmode="InAWindow" id="156">
+   <BOUNDS type="Node" left="5235" top="6360" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8910" top="6840" width="8775" height="7950">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="FieldScale" slicecount="1" values="6.88">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="156" srcpinname="Layer" dstnodeid="134" dstpinname="Layer 3" linkstyle="Bezier">
+   <LINKPOINT x="5420" y="7123">
+   </LINKPOINT>
+   <LINKPOINT x="2635" y="7113">
+   </LINKPOINT>
    </LINK>
    </PATCH>

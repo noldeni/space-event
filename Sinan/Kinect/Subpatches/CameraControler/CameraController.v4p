@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\vvvv\Projects\space-event\SPECTRAL KINECT\Subpatches\CameraControler\CameraController.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\CLONEPRODUCTION\_VISUAL MUSIC\vvvv_CloneMixer3.0\CameraController.v4p" systemname="CameraController">
+   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\CameraControler\CameraController.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\CLONEPRODUCTION\_VISUAL MUSIC\vvvv_CloneMixer3.0\CameraController.v4p" systemname="CameraController">
    <BOUNDS height="6675" left="11895" top="3495" type="Window" width="11790">
    </BOUNDS>
    <NODE componentmode="InABox" id="17" nodename="IOBox (Node)" systemname="IOBox (Node)">

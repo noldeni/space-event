@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\Skeleton.v4p" filename="C:\Users\clone\Desktop\Skeleton (Kinect Microsoft) help.v4p" systemname="Skeleton (Kinect Microsoft) help" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\Skeleton.v4p" filename="C:\Users\clone\Desktop\Skeleton (Kinect Microsoft) help.v4p" systemname="Skeleton (Kinect Microsoft) help" scrollx="150" scrolly="0">
    <BOUNDS height="11865" left="15540" top="0" type="Window" width="11160">
    </BOUNDS>
    <NODE componentmode="InABox" id="31" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -99,9 +99,9 @@
    <LINK srcnodeid="374" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="375" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="1545" top="2154" width="0" height="0">
+   <BOUNDS type="Node" left="1830" top="5169" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1545" top="2154" width="984" height="312">
+   <BOUNDS type="Box" left="1830" top="5169" width="984" height="312">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -356,24 +356,24 @@
    </LINK>
    <LINK srcnodeid="392" srcpinname="Output 2" dstnodeid="381" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="RangeSplitter" filename="RangeSplitter.v4p" nodename="RangeSplitter.v4p" componentmode="Hidden" id="395">
+   <NODE systemname="RangeSplitter" filename="RangeSplitter.v4p" nodename="RangeSplitter.v4p" componentmode="InAWindow" id="395">
    <BOUNDS type="Node" left="2556" top="8637" width="100" height="100">
    </BOUNDS>
    <PIN pinname="In-Type" visible="1">
    </PIN>
    <PIN pinname="Y-In" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="504" top="2772" width="10716" height="9000">
+   <BOUNDS type="Window" left="5580" top="1995" width="10710" height="9000">
    </BOUNDS>
    </NODE>
-   <NODE systemname="RangeSplitter" filename="RangeSplitter.v4p" nodename="RangeSplitter.v4p" componentmode="Hidden" id="396">
+   <NODE systemname="RangeSplitter" filename="RangeSplitter.v4p" nodename="RangeSplitter.v4p" componentmode="InAWindow" id="396">
    <BOUNDS type="Node" left="6132" top="8748" width="100" height="100">
    </BOUNDS>
    <PIN pinname="In-Type" visible="1">
    </PIN>
    <PIN pinname="Y-In" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="270" top="8190" width="10710" height="5985">
+   <BOUNDS type="Window" left="1950" top="6375" width="10710" height="5985">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="383" srcpinname="Output String" dstnodeid="395" dstpinname="In-Type">
@@ -429,5 +429,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="398" srcpinname="Texture Out" dstnodeid="401" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="403">
+   <BOUNDS type="Node" left="2520" top="6240" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="HandLeft">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="394" srcpinname="Output" dstnodeid="403" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="404">
+   <BOUNDS type="Node" left="8025" top="5670" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="HandRight">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="393" srcpinname="Output" dstnodeid="404" dstpinname="Input Value">
    </LINK>
    </PATCH>
