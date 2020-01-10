@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\_CLONEPRODUCTION-CLN\20- SPECTRAL KINECT\SPECTRAL KINECT\Subpatches\ResampleSkeleton\ResampleSkeleton.v4p" systemname="ResampleSkeleton" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\_CLONEPRODUCTION-CLN\20- KINECT LIGHT\LIGHT RIDER\Subpatches\ResampleSkeleton.v4p">
-   <BOUNDS type="Window" left="12090" top="3465" width="19860" height="10725">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\ResampleSkeleton\ResampleSkeleton.v4p" systemname="ResampleSkeleton" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\_CLONEPRODUCTION-CLN\20- KINECT LIGHT\LIGHT RIDER\Subpatches\ResampleSkeleton.v4p" scrollx="0" scrolly="345">
+   <BOUNDS type="Window" left="1956" top="816" width="19860" height="10716">
    </BOUNDS>
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="69">
    <BOUNDS type="Node" left="2595" top="5535" width="100" height="100">
@@ -86,7 +86,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="S (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="61">
+   <NODE systemname="S (VALUE ADVANCED)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="61">
    <BOUNDS type="Node" left="945" top="7695" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" encoded="0" values="PosXYZ">
@@ -95,6 +95,8 @@
    </PIN>
    <BOUNDS type="Box" left="945" top="7695">
    </BOUNDS>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="ResampleJoint" filename="ResampleJoint.v4p" nodename="LIGHT RIDER\Subpatches\ResampleJoint.v4p" componentmode="Hidden" id="60">
    <BOUNDS type="Node" left="17325" top="2340" width="0" height="0">
@@ -1021,7 +1023,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="18630" top="2895" width="510" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="8">
+   <PIN pinname="Y Input Value" slicecount="1" values="16">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1432,12 +1434,14 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="S (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="91">
+   <NODE systemname="S (VALUE ADVANCED)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="91">
    <BOUNDS type="Node" left="4095" top="7530" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" encoded="0" values="HeadPOS">
    </PIN>
    <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="92" srcpinname="Output" dstnodeid="91" dstpinname="Input">
@@ -1465,7 +1469,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="465" top="5550" width="795" height="720">
    </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -1483,7 +1487,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3675" top="5385" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -1492,4 +1496,6 @@
    </NODE>
    <LINK srcnodeid="63" srcpinname="Count" dstnodeid="95" dstpinname="Y Input Value">
    </LINK>
+   <PACK Name="addonpack" Version="39.0.0">
+   </PACK>
    </PATCH>

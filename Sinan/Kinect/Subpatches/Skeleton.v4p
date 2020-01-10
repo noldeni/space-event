@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
    <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\Skeleton.v4p" filename="C:\Users\clone\Desktop\Skeleton (Kinect Microsoft) help.v4p" systemname="Skeleton (Kinect Microsoft) help" scrollx="150" scrolly="0">
-   <BOUNDS height="11865" left="15540" top="0" type="Window" width="11160">
+   <BOUNDS height="11865" left="765" top="3090" type="Window" width="11160">
    </BOUNDS>
    <NODE componentmode="InABox" id="31" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="4215" top="540" type="Node" width="100">
@@ -273,9 +273,9 @@
    <LINK srcnodeid="389" srcpinname="Output" dstnodeid="386" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="385">
-   <BOUNDS type="Box" left="6117" top="8253" width="795" height="240">
+   <BOUNDS type="Box" left="3552" top="8493" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6117" top="8253" width="0" height="0">
+   <BOUNDS type="Node" left="3552" top="8493" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="hr">
    </PIN>
@@ -289,9 +289,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="383">
-   <BOUNDS type="Box" left="2541" top="8187" width="795" height="240">
+   <BOUNDS type="Box" left="2421" top="8502" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2541" top="8187" width="0" height="0">
+   <BOUNDS type="Node" left="2421" top="8502" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="hl">
    </PIN>
@@ -357,33 +357,15 @@
    <LINK srcnodeid="392" srcpinname="Output 2" dstnodeid="381" dstpinname="Input 1">
    </LINK>
    <NODE systemname="RangeSplitter" filename="RangeSplitter.v4p" nodename="RangeSplitter.v4p" componentmode="InAWindow" id="395">
-   <BOUNDS type="Node" left="2556" top="8637" width="100" height="100">
+   <BOUNDS type="Node" left="4941" top="10047" width="100" height="100">
    </BOUNDS>
    <PIN pinname="In-Type" visible="1">
    </PIN>
-   <PIN pinname="Y-In" visible="1">
+   <PIN pinname="Y-In" visible="1" slicecount="8" values="-0.179415427148342,-0.179415427148342,-0.179415427148342,-0.179415427148342,-0.215175114572048,-0.215175114572048,-0.215175114572048,-0.215175114572048">
    </PIN>
-   <BOUNDS type="Window" left="5580" top="1995" width="10710" height="9000">
+   <BOUNDS type="Window" left="7980" top="450" width="10710" height="9000">
    </BOUNDS>
    </NODE>
-   <NODE systemname="RangeSplitter" filename="RangeSplitter.v4p" nodename="RangeSplitter.v4p" componentmode="InAWindow" id="396">
-   <BOUNDS type="Node" left="6132" top="8748" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="In-Type" visible="1">
-   </PIN>
-   <PIN pinname="Y-In" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="1950" top="6375" width="10710" height="5985">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="383" srcpinname="Output String" dstnodeid="395" dstpinname="In-Type">
-   </LINK>
-   <LINK srcnodeid="385" srcpinname="Output String" dstnodeid="396" dstpinname="In-Type">
-   </LINK>
-   <LINK srcnodeid="392" srcpinname="Output 2" dstnodeid="395" dstpinname="Y-In">
-   </LINK>
-   <LINK srcnodeid="391" srcpinname="Output 2" dstnodeid="396" dstpinname="Y-In">
-   </LINK>
    <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="397">
@@ -449,5 +431,75 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="393" srcpinname="Output" dstnodeid="404" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Zip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String)" componentmode="Hidden" id="405">
+   <BOUNDS type="Node" left="3945" top="9360" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3945" top="9360" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="383" srcpinname="Output String" dstnodeid="405" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="385" srcpinname="Output String" dstnodeid="405" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="405" srcpinname="Output" dstnodeid="395" dstpinname="In-Type">
+   </LINK>
+   <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="407">
+   <BOUNDS type="Node" left="7545" top="7620" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7545" top="7620" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="-0.172112539410591">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="391" srcpinname="Output 2" dstnodeid="407" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="408">
+   <BOUNDS type="Node" left="3450" top="6855" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3450" top="6855" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="-0.172112539410591">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="392" srcpinname="Output 1" dstnodeid="408" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="410">
+   <BOUNDS type="Node" left="5880" top="8670" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5880" top="8670" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="408" srcpinname="Output" dstnodeid="410" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="407" srcpinname="Output" dstnodeid="410" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="391" srcpinname="Output 1" dstnodeid="408" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="392" srcpinname="Output 2" dstnodeid="407" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="410" srcpinname="Output" dstnodeid="395" dstpinname="Y-In">
    </LINK>
    </PATCH>
