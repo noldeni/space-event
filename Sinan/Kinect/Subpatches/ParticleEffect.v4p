@@ -31,7 +31,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="21" visible="1" values="200,1.09,3,1,1.43,0.79,0,10,10,27,0,0,40,0,0,0,0,0,0,0,-180">
+   <PIN pinname="Y Input Value" slicecount="21" visible="1" values="200,2.32,3,1,1.43,0.79,0,10,10,27,0,0,40,0,0,0,0,0,0,0,-180">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="7">
    </PIN>
@@ -2211,6 +2211,8 @@
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="kinectRGB">
+   </PIN>
    </NODE>
    <LINK srcnodeid="908" srcpinname="Input Value" dstnodeid="269" dstpinname="colorMultipleTexture">
    </LINK>
@@ -2223,7 +2225,7 @@
    </PIN>
    <PIN pinname="Saturation" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Lightness" slicecount="1" values="0.19">
+   <PIN pinname="Lightness" slicecount="1" values="0.55">
    </PIN>
    </NODE>
    <LINK srcnodeid="910" srcpinname="Output" dstnodeid="269" dstpinname="colorMultiple">
