@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\ParticleEffect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\_CLONEPRODUCTION-CLN\20- SPECTRAL KINECT\SPECTRAL KINECT\Subpatches\ParticleEffect.v4p" systemname="ParticleEffect" scrollx="0" scrolly="0">
-   <BOUNDS height="9480" left="732" top="2748" type="Window" width="14520">
+   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\ParticleEffect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\_CLONEPRODUCTION-CLN\20- SPECTRAL KINECT\SPECTRAL KINECT\Subpatches\ParticleEffect.v4p" systemname="ParticleEffect" scrollx="0" scrolly="2748">
+   <BOUNDS height="9480" left="7224" top="1836" type="Window" width="14520">
    </BOUNDS>
    <NODE componentmode="Hidden" id="100" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
    <BOUNDS height="100" left="1170" top="7635" type="Node" width="100">
@@ -19,7 +19,7 @@
    <NODE componentmode="InABox" id="116" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="2790" top="900" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="3585" left="2790" top="900" type="Box" width="705">
+   <BOUNDS height="3684" left="2790" top="900" type="Box" width="852">
    </BOUNDS>
    <BOUNDS height="160" left="6270" top="6165" type="Window" width="215">
    </BOUNDS>
@@ -31,7 +31,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="21" visible="1" values="132.96,0.28,2,1.12,1,0.93,20,100,3.46,6.61,15,4.44,5,20,0,0,0,0,0,0,-180">
+   <PIN pinname="Y Input Value" slicecount="21" visible="1" values="100,0.43,31.34,0.53,1,0.93,20,100,0,0,0,0,0,0,0,50,0,0,500,0,-180">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="7">
    </PIN>
@@ -43,7 +43,7 @@
    <NODE componentmode="InABox" id="114" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="855" top="900" type="Node" width="1110">
    </BOUNDS>
-   <BOUNDS height="3570" left="855" top="900" type="Box" width="1950">
+   <BOUNDS height="3744" left="855" top="900" type="Box" width="1944">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|1) Particles Count &tab;.. [Power of 2]&cr;&lf;2) Particle Size      &tab;.. [ 0 .. 10 ]&cr;&lf;3) particle reTime &tab;.. [ .2 .. 100 ]&cr;&lf;4) alfa multiple     &tab;.. [ 0 .. 3 ]&cr;&lf;5) create stripes   &tab;.. [ 0.5 +-2]&cr;&lf;6) air continuity    &tab;.. [ 1 +-0.2]&cr;&lf;7) gravity            &tab;.. force [+-200]&cr;&lf;8) fuzzy amount   &tab;.. force&cr;&lf;9) fuzzy range -1  &tab;.. [ 0.2 .. 10 ]&cr;&lf;10) attract amount    .. force&cr;&lf;11) attract range  &tab;.. [ 0 .. 100 ]&cr;&lf;12) torque amont &tab;.. force&cr;&lf;13) torque2 amount   .. [ 5 .. 100 ]&cr;&lf;14) random spread&tab;.. [ 0 .. 5000 ]&cr;&lf;15) gravity X&cr;&lf;16) gravity Y&tab;.. forces&cr;&lf;17) gravity Z&cr;&lf;18) add X velocity&cr;&lf;19) add Y velocity&tab;.. [ 0 +-5000]&cr;&lf;20) add Z velocity&cr;&lf;21) ground|">
    </PIN>
@@ -2195,7 +2195,7 @@
    </PIN>
    <PIN pinname="Saturation" slicecount="1" values="0.49">
    </PIN>
-   <PIN pinname="Lightness" slicecount="1" values="0.08">
+   <PIN pinname="Lightness" slicecount="1" values="0.2">
    </PIN>
    <PIN pinname="Hue" slicecount="1" values="0.74">
    </PIN>

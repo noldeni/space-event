@@ -91,9 +91,9 @@
    <LINK srcnodeid="11" srcpinname="Texture Out" dstnodeid="0" dstpinname="Texture">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
-   <BOUNDS type="Node" left="5835" top="1635" width="100" height="100">
+   <BOUNDS type="Node" left="4695" top="1539" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5835" top="1635" width="795" height="240">
+   <BOUNDS type="Box" left="4695" top="1539" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -143,7 +143,7 @@
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="18" dstpinname="VerticesXY">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="690" top="3585" width="100" height="100">
+   <BOUNDS type="Node" left="678" top="3537" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -153,7 +153,7 @@
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="4965" top="3495" width="100" height="100">
+   <BOUNDS type="Node" left="4617" top="3519" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="quadTransform">
    </PIN>
@@ -199,7 +199,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1.67">
+   <PIN pinname="Y Input Value" slicecount="1" values="1.39">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Radius">
    </PIN>
@@ -215,7 +215,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.13">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.21">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|X Translate|">
    </PIN>

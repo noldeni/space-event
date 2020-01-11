@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\RangeSplitter.v4p" scrollx="0" scrolly="255" systemname="RangeSplitter" filename="C:\vvvv\Projects\space-event\Experiments\RangeSplitter.v4p">
-   <BOUNDS type="Window" left="7980" top="450" width="10710" height="9000">
+   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\RangeSplitter.v4p" scrollx="24" scrolly="324" systemname="RangeSplitter" filename="C:\vvvv\Projects\space-event\Experiments\RangeSplitter.v4p">
+   <BOUNDS type="Window" left="11556" top="696" width="10704" height="9000">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="1935" top="1395" width="100" height="100">
@@ -486,202 +486,22 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Input 1">
    </LINK>
-   <NODE id="59" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" left="720" top="6270" width="990" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="720" top="6270" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" pintype="Input" visible="0" values="||">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="In-Type">
-   </PIN>
-   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
-   </PIN>
-   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
-   </PIN>
-   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
-   </PIN>
-   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
-   </PIN>
-   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" pintype="Configuration" slicecount="1" values="String">
-   </PIN>
-   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Changed" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
-   <NODE systemname="OSCRangeTransmitter" filename="OSCRangeTransmitter.v4p" componentmode="InAWindow" id="64" nodename="OSCRangeTransmitter.v4p">
-   <BOUNDS type="Node" left="2475" top="7665" width="100" height="100">
+   <NODE id="68" componentmode="InAWindow" systemname="OSCRangeTransmitter" filename="OSCRangeTransmitter.v4p" nodename="OSCRangeTransmitter.v4p">
+   <BOUNDS type="Window" left="1812" top="1020" width="9000" height="9000">
    </BOUNDS>
-   <BOUNDS type="Box" left="2475" top="7665" width="4800" height="4800">
+   <BOUNDS type="Node" left="6702" top="6990" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="18300" top="3225" width="9000" height="9000">
-   </BOUNDS>
-   <PIN pinname="In-Type" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Range-Type" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="OSCRangeTransmitter" filename="OSCRangeTransmitter.v4p" componentmode="Hidden" id="66" nodename="OSCRangeTransmitter.v4p">
-   <BOUNDS type="Node" left="4860" top="7665" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4860" top="7665" width="4800" height="4800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="6420" top="2448" width="9000" height="9000">
+   <BOUNDS type="Box" left="6702" top="6990" width="4800" height="4800">
    </BOUNDS>
    <PIN pinname="In-Type" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Range-Type" visible="1">
+   <PIN pinname="Range-Type" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="59" srcpinname="Output String" dstnodeid="64" dstpinname="In-Type">
-   </LINK>
-   <LINK srcnodeid="59" srcpinname="Output String" dstnodeid="66" dstpinname="In-Type">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="64" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="66" dstpinname="Input">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="70">
-   <BOUNDS type="Box" left="975" top="7095" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="975" top="7095" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="4">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="71">
-   <BOUNDS type="Box" left="2460" top="7140" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2460" top="7140" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="3">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="72">
-   <BOUNDS type="Box" left="5040" top="7140" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5040" top="7140" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="2">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="73">
-   <BOUNDS type="Box" left="7410" top="7170" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7410" top="7170" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="71" srcpinname="Output String" dstnodeid="64" dstpinname="Range-Type">
-   </LINK>
-   <LINK srcnodeid="72" srcpinname="Output String" dstnodeid="66" dstpinname="Range-Type">
-   </LINK>
-   <NODE systemname="OSCRangeTransmitter" filename="OSCRangeTransmitter.v4p" nodename="OSCRangeTransmitter.v4p" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="240" top="7650" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Range-Type" visible="1">
-   </PIN>
-   <PIN pinname="In-Type" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="10788" top="2136" width="9000" height="9000">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="70" srcpinname="Output String" dstnodeid="74" dstpinname="Range-Type">
-   </LINK>
-   <LINK srcnodeid="59" srcpinname="Output String" dstnodeid="74" dstpinname="In-Type">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="74" dstpinname="Input">
-   </LINK>
-   <NODE id="68" componentmode="Hidden" systemname="OSCRangeTransmitter" filename="OSCRangeTransmitter.v4p" nodename="OSCRangeTransmitter.v4p">
-   <BOUNDS type="Window" left="8388" top="3216" width="9000" height="9000">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7170" top="7650" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7170" top="7650" width="4800" height="4800">
-   </BOUNDS>
-   <PIN pinname="In-Type" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Range-Type" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="73" srcpinname="Output String" dstnodeid="68" dstpinname="Range-Type">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="68" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="59" srcpinname="Output String" dstnodeid="68" dstpinname="In-Type">
-   </LINK>
    <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <NODE systemname="HitTest (2d Polygon)" filename="%VVVV%\addonpack\lib\nodes\plugins\HitTest2dNodes.dll" nodename="HitTest (2d Polygon)" componentmode="Hidden" id="75">
@@ -696,6 +516,8 @@
    <PIN pinname="Transform In" visible="1">
    </PIN>
    <PIN pinname="Object Id" visible="1">
+   </PIN>
+   <PIN pinname="Point Hit" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="76">
@@ -735,6 +557,8 @@
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="75" srcpinname="Object Id" dstnodeid="80" dstpinname="Y Input Value">
    </LINK>
@@ -749,5 +573,31 @@
    <LINK srcnodeid="75" srcpinname="Object Id" dstnodeid="81" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="75" dstpinname="PointsXY">
+   </LINK>
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="82">
+   <BOUNDS type="Node" left="6612" top="6036" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="SubType" slicecount="1" values="|Integer (MinInt .. MaxInt)|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="82" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Output" dstnodeid="68" dstpinname="Range-Type">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="8352" top="5772" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="75" srcpinname="Point Hit" dstnodeid="83" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="OnChange" dstnodeid="68" dstpinname="Input">
    </LINK>
    </PATCH>

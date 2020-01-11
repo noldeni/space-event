@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="0" scrolly="168">
-   <BOUNDS height="12072" left="3096" top="288" type="Window" width="11052">
+   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="0" scrolly="384">
+   <BOUNDS height="12072" left="252" top="288" type="Window" width="11052">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4101" top="10401" width="0" height="0">
+   <BOUNDS type="Node" left="4365" top="12789" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4101" top="10401" width="540" height="240">
+   <BOUNDS type="Box" left="4365" top="12789" width="540" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -17,25 +17,25 @@
    </PIN>
    </NODE>
    <NODE systemname="S (VALUE ADVANCED)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="3231" top="10401" width="100" height="100">
+   <BOUNDS type="Node" left="3495" top="12789" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" encoded="0" values="Height">
    </PIN>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="3231" top="10401">
+   <BOUNDS type="Box" left="3495" top="12789">
    </BOUNDS>
    <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="S (VALUE ADVANCED)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="3681" top="10401" width="100" height="100">
+   <BOUNDS type="Node" left="3945" top="12789" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" encoded="0" values="Width">
    </PIN>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="3681" top="10401">
+   <BOUNDS type="Box" left="3945" top="12789">
    </BOUNDS>
    <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
@@ -74,7 +74,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="InAWindow" id="43">
+   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="4491" top="2496" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
@@ -388,8 +388,8 @@
    </NODE>
    <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="143" dstpinname="Pause">
    </LINK>
-   <NODE id="7" componentmode="InAWindow" filename="Subpatches\ParticleEffect.v4p" nodename="Subpatches\ParticleEffect.v4p" systemname="ParticleEffect">
-   <BOUNDS type="Window" left="732" top="2748" width="14520" height="9480">
+   <NODE id="7" componentmode="Hidden" filename="Subpatches\ParticleEffect.v4p" nodename="Subpatches\ParticleEffect.v4p" systemname="ParticleEffect">
+   <BOUNDS type="Window" left="7224" top="1836" width="14520" height="9480">
    </BOUNDS>
    <BOUNDS type="Node" height="270" left="2391" top="7026" width="1275">
    </BOUNDS>
@@ -495,7 +495,7 @@
    </PIN>
    <PIN pinname="Reset" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Initial Distance" slicecount="1" values="20">
+   <PIN pinname="Initial Distance" slicecount="1" values="15">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
@@ -525,13 +525,19 @@
    <NODE systemname="HitBoxes" filename="Subpatches\HitBoxes.v4p" nodename="Subpatches\HitBoxes.v4p" componentmode="Hidden" id="156">
    <BOUNDS type="Node" left="5235" top="7635" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="19290" top="5745" width="8775" height="7950">
+   <BOUNDS type="Window" left="7872" top="2436" width="8772" height="7944">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="FieldScale" slicecount="1" visible="1" values="0.37">
    </PIN>
-   <PIN pinname="Radius" slicecount="1" values="1.05">
+   <PIN pinname="Radius" slicecount="1" values="1.39">
+   </PIN>
+   <PIN pinname="numberOfBoxes" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Y Translate" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Translate" slicecount="1" values="0.21">
    </PIN>
    </NODE>
    <LINK srcnodeid="156" srcpinname="Layer" dstnodeid="134" dstpinname="Layer 3" linkstyle="Bezier">
@@ -601,7 +607,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" slicecount="1" visible="1" values="0.37">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.37">
+   <PIN pinname="Input 2" slicecount="1" values="0.46">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -621,9 +627,9 @@
    <LINK srcnodeid="161" srcpinname="Position Out" dstnodeid="156" dstpinname="FieldScale">
    </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="162">
-   <BOUNDS type="Node" left="3000" top="9552" width="100" height="100">
+   <BOUNDS type="Node" left="3264" top="11940" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3000" top="9552" width="2400" height="1800">
+   <BOUNDS type="Box" left="3264" top="11940" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="26952" top="2352" width="6852" height="5064">
    </BOUNDS>
