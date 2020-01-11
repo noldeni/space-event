@@ -375,7 +375,7 @@
    <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="397">
-   <BOUNDS type="Node" left="684" top="3804" width="100" height="100">
+   <BOUNDS type="Node" left="1500" top="4656" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -491,7 +491,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="416">
-   <BOUNDS type="Node" left="1524" top="3444" width="100" height="100">
+   <BOUNDS type="Node" left="1740" top="4056" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -502,8 +502,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="34" srcpinname="PositionXYZ" dstnodeid="416" dstpinname="Input">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="417">
    <BOUNDS type="Node" left="5856" top="1740" width="100" height="100">
    </BOUNDS>
@@ -515,7 +513,7 @@
    <LINK srcnodeid="417" srcpinname="Y Output Value" dstnodeid="416" dstpinname="Offset">
    </LINK>
    <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="418">
-   <BOUNDS type="Node" left="3816" top="3360" width="100" height="100">
+   <BOUNDS type="Node" left="2844" top="4080" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -526,8 +524,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="34" srcpinname="Joint PositionXYZ" dstnodeid="418" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="417" srcpinname="Y Output Value" dstnodeid="418" dstpinname="Offset">
    </LINK>
    <LINK srcnodeid="416" srcpinname="Output" dstnodeid="397" dstpinname="Input 2">
@@ -547,5 +543,29 @@
    <LINK srcnodeid="34" srcpinname="Skeleton Count" dstnodeid="419" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="419" srcpinname="Output" dstnodeid="411" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="420">
+   <BOUNDS type="Node" left="2244" top="3276" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Joint PositionXYZ" dstnodeid="420" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="420" srcpinname="Position Out" dstnodeid="418" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="421">
+   <BOUNDS type="Node" left="1392" top="3504" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="PositionXYZ" dstnodeid="421" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="421" srcpinname="Position Out" dstnodeid="416" dstpinname="Input">
    </LINK>
    </PATCH>

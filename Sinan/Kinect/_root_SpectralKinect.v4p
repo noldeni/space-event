@@ -74,7 +74,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="Hidden" id="43">
+   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="InAWindow" id="43">
    <BOUNDS type="Node" left="4491" top="2496" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
@@ -531,7 +531,7 @@
    </PIN>
    <PIN pinname="FieldScale" slicecount="1" visible="1" values="0.37">
    </PIN>
-   <PIN pinname="Radius" slicecount="1" values="1.3">
+   <PIN pinname="Radius" slicecount="1" values="1.17">
    </PIN>
    <PIN pinname="numberOfBoxes" slicecount="1" values="10">
    </PIN>
@@ -607,7 +607,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" slicecount="1" visible="1" values="0.37">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.26">
+   <PIN pinname="Input 2" slicecount="1" values="0.17">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -631,7 +631,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3264" top="11940" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="1644" top="660" width="8952" height="9744">
+   <BOUNDS type="Window" left="408" top="288" width="8952" height="9744">
    </BOUNDS>
    <PIN pinname="Projection" visible="1">
    </PIN>
