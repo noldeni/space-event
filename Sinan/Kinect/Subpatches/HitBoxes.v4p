@@ -9,7 +9,7 @@
    </PIN>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Texture" visible="1">
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
@@ -26,7 +26,7 @@
    </NODE>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="1" dstpinname="Input Node">
    </LINK>
-   <BOUNDS type="Window" left="7872" top="2436" width="8772" height="7944">
+   <BOUNDS type="Window" left="12864" top="3036" width="8772" height="7944">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -53,7 +53,7 @@
    <NODE systemname="CircularSpread (Spreads)" nodename="CircularSpread (Spreads)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="3285" top="930" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Spread Count" slicecount="1" values="9" visible="1">
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="9">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -88,8 +88,6 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="11" srcpinname="Texture Out" dstnodeid="0" dstpinname="Texture">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
    <BOUNDS type="Node" left="4695" top="1539" width="100" height="100">
    </BOUNDS>
@@ -199,7 +197,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1.39">
+   <PIN pinname="Y Input Value" slicecount="1" values="1.3">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Radius">
    </PIN>
@@ -315,11 +313,11 @@
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="28" dstpinname="Input">
    </LINK>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="5850" top="270" width="100" height="100">
+   <BOUNDS type="Node" left="5838" top="810" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Width" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="7">
+   <PIN pinname="Spread Count" slicecount="1" values="7" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -366,4 +364,6 @@
    </LINK>
    <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
+   <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Spread Count">
+   </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="0" scrolly="384">
-   <BOUNDS height="12072" left="252" top="288" type="Window" width="11052">
+   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="456" scrolly="0">
+   <BOUNDS height="12072" left="9360" top="156" type="Window" width="11052">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="4365" top="12789" width="0" height="0">
@@ -522,18 +522,18 @@
    <LINKPOINT x="3190" y="5645">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="HitBoxes" filename="Subpatches\HitBoxes.v4p" nodename="Subpatches\HitBoxes.v4p" componentmode="Hidden" id="156">
+   <NODE systemname="HitBoxes" filename="Subpatches\HitBoxes.v4p" nodename="Subpatches\HitBoxes.v4p" componentmode="InAWindow" id="156">
    <BOUNDS type="Node" left="5235" top="7635" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="7872" top="2436" width="8772" height="7944">
+   <BOUNDS type="Window" left="12864" top="3036" width="8772" height="7944">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="FieldScale" slicecount="1" visible="1" values="0.37">
    </PIN>
-   <PIN pinname="Radius" slicecount="1" values="1.39">
+   <PIN pinname="Radius" slicecount="1" values="1.3">
    </PIN>
-   <PIN pinname="numberOfBoxes" slicecount="1" values="7">
+   <PIN pinname="numberOfBoxes" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Y Translate" slicecount="1" values="0">
    </PIN>
@@ -607,7 +607,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" slicecount="1" visible="1" values="0.37">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.46">
+   <PIN pinname="Input 2" slicecount="1" values="0.26">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -626,12 +626,12 @@
    </LINK>
    <LINK srcnodeid="161" srcpinname="Position Out" dstnodeid="156" dstpinname="FieldScale">
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="162">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="162">
    <BOUNDS type="Node" left="3264" top="11940" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3264" top="11940" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="26952" top="2352" width="6852" height="5064">
+   <BOUNDS type="Window" left="1644" top="660" width="8952" height="9744">
    </BOUNDS>
    <PIN pinname="Projection" visible="1">
    </PIN>
