@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
    <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\Skeleton.v4p" filename="C:\Users\clone\Desktop\Skeleton (Kinect Microsoft) help.v4p" systemname="Skeleton (Kinect Microsoft) help" scrollx="150" scrolly="0">
-   <BOUNDS height="11865" left="765" top="3090" type="Window" width="11160">
+   <BOUNDS height="11865" left="13755" top="2445" type="Window" width="11160">
    </BOUNDS>
    <NODE componentmode="InABox" id="31" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="4215" top="540" type="Node" width="100">
@@ -58,6 +58,8 @@
    <PIN pinname="Joint PositionXYZ" visible="1">
    </PIN>
    <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Skeleton Count" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Reset">
@@ -501,5 +503,17 @@
    <LINK srcnodeid="392" srcpinname="Output 2" dstnodeid="407" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="410" srcpinname="Output" dstnodeid="395" dstpinname="Y-In">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="411">
+   <BOUNDS type="Node" left="285" top="4380" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="285" top="4380" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="skeletonCount">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Skeleton Count" dstnodeid="411" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

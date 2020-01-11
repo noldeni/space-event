@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="510" scrolly="0">
    <BOUNDS height="12075" left="6075" top="1035" type="Window" width="8730">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="10" nodename="Renderer (EX9)" systemname="RENDERER (EX9)" stayontop="1">
@@ -107,6 +107,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Bang On StartUp|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="InAWindow" id="43">
    <BOUNDS type="Node" left="4491" top="2496" width="100" height="100">
@@ -115,9 +117,13 @@
    </PIN>
    <BOUNDS type="Box" left="4491" top="2496">
    </BOUNDS>
-   <BOUNDS type="Window" left="765" top="3090" width="11160" height="11865">
+   <BOUNDS type="Window" left="13755" top="2445" width="11160" height="11865">
    </BOUNDS>
    <PIN pinname="skeleton pos" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="skeletonCount" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="ResampleSkeleton" filename="Subpatches\ResampleSkeleton\ResampleSkeleton.v4p" nodename="Subpatches\ResampleSkeleton\ResampleSkeleton.v4p" componentmode="Hidden" id="41">
@@ -254,12 +260,12 @@
    <LINKPOINT x="2640" y="8385">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Morph To Random Pos" filename="Subpatches\Morph To Random Pos.v4p" nodename="Subpatches\Morph To Random Pos.v4p" componentmode="Hidden" id="139">
+   <NODE systemname="Morph To Random Pos" filename="Subpatches\Morph To Random Pos.v4p" nodename="Subpatches\Morph To Random Pos.v4p" componentmode="InAWindow" id="139">
    <BOUNDS type="Node" left="4491" top="4851" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="4491" top="4851" width="7735" height="9030">
    </BOUNDS>
-   <BOUNDS type="Window" left="7515" top="1035" width="6990" height="8220">
+   <BOUNDS type="Window" left="15195" top="1935" width="6990" height="8220">
    </BOUNDS>
    <PIN pinname="Position Out" visible="1">
    </PIN>
@@ -285,7 +291,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4476" top="1341" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -295,7 +301,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Use Debug Joint Pos|">
    </PIN>
@@ -551,7 +557,7 @@
    </PIN>
    <PIN pinname="Reset" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Initial Distance" slicecount="1" values="17.87">
+   <PIN pinname="Initial Distance" slicecount="1" values="20">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
@@ -593,11 +599,13 @@
    <NODE systemname="HitBoxes" filename="Subpatches\HitBoxes.v4p" nodename="Subpatches\HitBoxes.v4p" componentmode="InAWindow" id="156">
    <BOUNDS type="Node" left="5235" top="7635" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="8910" top="6840" width="8775" height="7950">
+   <BOUNDS type="Window" left="19290" top="5745" width="8775" height="7950">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="FieldScale" slicecount="1" values="0.39">
+   <PIN pinname="FieldScale" slicecount="1" values="0.37" visible="1">
+   </PIN>
+   <PIN pinname="Radius" slicecount="1" values="1.05">
    </PIN>
    </NODE>
    <LINK srcnodeid="156" srcpinname="Layer" dstnodeid="134" dstpinname="Layer 3" linkstyle="Bezier">
@@ -658,6 +666,32 @@
    </LINK>
    <LINK srcnodeid="159" srcpinname="Output 3" dstnodeid="158" dstpinname="Z UnTransformed">
    </LINK>
-   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="7" dstpinname="PosXYZ">
+   <LINK srcnodeid="139" srcpinname="Position Out" dstnodeid="7" dstpinname="PosXYZ">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="160">
+   <BOUNDS type="Node" left="6540" top="6390" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="0.37">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="0.37">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="skeletonCount" dstnodeid="160" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="161">
+   <BOUNDS type="Node" left="6315" top="6990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="161" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="161" srcpinname="Position Out" dstnodeid="156" dstpinname="FieldScale">
    </LINK>
    </PATCH>
