@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\Skeleton.v4p" filename="C:\Users\clone\Desktop\Skeleton (Kinect Microsoft) help.v4p" systemname="Skeleton (Kinect Microsoft) help" scrollx="150" scrolly="0">
-   <BOUNDS height="11865" left="13755" top="2445" type="Window" width="11160">
+   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\Skeleton.v4p" filename="C:\Users\clone\Desktop\Skeleton (Kinect Microsoft) help.v4p" systemname="Skeleton (Kinect Microsoft) help" scrollx="150" scrolly="0">
+   <BOUNDS height="11856" left="8712" top="648" type="Window" width="11160">
    </BOUNDS>
    <NODE componentmode="InABox" id="31" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="4215" top="540" type="Node" width="100">
@@ -48,6 +48,8 @@
    <PIN pinname="Depth Range" visible="1" slicecount="1" values="Default">
    </PIN>
    <PIN pinname="Smooth Parameters" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enable Skeleton Smoothing" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.MSKinect.dll" id="34" nodename="Skeleton (Kinect Microsoft DX9)" systemname="Skeleton (Kinect Microsoft DX9)">
@@ -358,7 +360,7 @@
    </LINK>
    <LINK srcnodeid="392" srcpinname="Output 2" dstnodeid="381" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="RangeSplitter" filename="RangeSplitter.v4p" nodename="RangeSplitter.v4p" componentmode="InAWindow" id="395">
+   <NODE systemname="RangeSplitter" filename="RangeSplitter.v4p" nodename="RangeSplitter.v4p" componentmode="Hidden" id="395">
    <BOUNDS type="Node" left="4941" top="10047" width="100" height="100">
    </BOUNDS>
    <PIN pinname="In-Type" visible="1">
@@ -393,9 +395,9 @@
    <LINK srcnodeid="397" srcpinname="Output" dstnodeid="393" dstpinname="Input">
    </LINK>
    <NODE systemname="RGB (Kinect Microsoft DX9)" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.MSKinect.dll" nodename="RGB (Kinect Microsoft DX9)" componentmode="Hidden" id="398">
-   <BOUNDS type="Node" left="3495" top="2625" width="100" height="100">
+   <BOUNDS type="Node" left="6723" top="2469" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3495" top="2625" width="3000" height="3000">
+   <BOUNDS type="Box" left="6723" top="2469" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Kinect Runtime" visible="1">
    </PIN>
@@ -405,15 +407,13 @@
    <LINK srcnodeid="0" srcpinname="Kinect Runtime" dstnodeid="398" dstpinname="Kinect Runtime">
    </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="401">
-   <BOUNDS type="Node" left="3555" top="3270" width="100" height="100">
+   <BOUNDS type="Node" left="7719" top="4146" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="kinectRGB">
    </PIN>
    </NODE>
-   <LINK srcnodeid="398" srcpinname="Texture Out" dstnodeid="401" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="403">
    <BOUNDS type="Node" left="2520" top="6240" width="100" height="100">
    </BOUNDS>
@@ -515,5 +515,43 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="Skeleton Count" dstnodeid="411" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="412">
+   <BOUNDS type="Node" left="5736" top="4248" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5736" top="4248" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1080" top="420" width="6216" height="5064">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="413">
+   <BOUNDS type="Node" left="6696" top="3360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="413" srcpinname="Layer" dstnodeid="412" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="HSCB (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HSCB\HSCB (EX9.Texture Filter).v4p" nodename="HSCB (EX9.Texture Filter)" componentmode="Hidden" id="414">
+   <BOUNDS type="Node" left="7692" top="2820" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Contrast" slicecount="1" values="3.16">
+   </PIN>
+   <PIN pinname="Brightness" slicecount="1" values="13.99">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="414" srcpinname="Output" dstnodeid="401" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Texture Out" dstnodeid="414" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Texture Out" dstnodeid="413" dstpinname="Texture">
    </LINK>
    </PATCH>

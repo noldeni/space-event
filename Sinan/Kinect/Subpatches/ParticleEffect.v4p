@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\ParticleEffect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\_CLONEPRODUCTION-CLN\20- SPECTRAL KINECT\SPECTRAL KINECT\Subpatches\ParticleEffect.v4p" systemname="ParticleEffect" scrollx="195" scrolly="2475">
-   <BOUNDS height="9480" left="3510" top="2280" type="Window" width="14520">
+   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\ParticleEffect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\_CLONEPRODUCTION-CLN\20- SPECTRAL KINECT\SPECTRAL KINECT\Subpatches\ParticleEffect.v4p" systemname="ParticleEffect" scrollx="0" scrolly="0">
+   <BOUNDS height="9480" left="732" top="2748" type="Window" width="14520">
    </BOUNDS>
    <NODE componentmode="Hidden" id="100" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
    <BOUNDS height="100" left="1170" top="7635" type="Node" width="100">
@@ -31,7 +31,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="21" visible="1" values="80,1,50,2,1,0.63,20,100,10,35.35,50,5,5,500,0,20,0,0,100,0,-180">
+   <PIN pinname="Y Input Value" slicecount="21" visible="1" values="132.96,0.28,2,1.12,1,0.93,20,100,3.46,6.61,15,4.44,5,20,0,0,0,0,0,0,-180">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="7">
    </PIN>
@@ -2186,16 +2186,6 @@
    </LINK>
    <LINK srcnodeid="891" srcpinname="Output 5" dstnodeid="562" dstpinname="sparkling on/off">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="908">
-   <BOUNDS type="Node" left="6885" top="6630" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="kinectRGB">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="908" srcpinname="Input Value" dstnodeid="269" dstpinname="colorMultipleTexture">
-   </LINK>
    <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="910">
    <BOUNDS type="Node" left="2970" top="7965" width="100" height="100">
    </BOUNDS>
@@ -2203,11 +2193,11 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Saturation" slicecount="1" values="0">
+   <PIN pinname="Saturation" slicecount="1" values="0.49">
    </PIN>
-   <PIN pinname="Lightness" slicecount="1" values="0.5">
+   <PIN pinname="Lightness" slicecount="1" values="0.08">
    </PIN>
-   <PIN pinname="Hue" slicecount="1" values="0">
+   <PIN pinname="Hue" slicecount="1" values="0.74">
    </PIN>
    </NODE>
    <LINK srcnodeid="910" srcpinname="Output" dstnodeid="269" dstpinname="colorMultiple">
