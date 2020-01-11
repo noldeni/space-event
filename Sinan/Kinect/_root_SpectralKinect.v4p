@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="456" scrolly="0">
+   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="0" scrolly="4956">
    <BOUNDS height="12072" left="9360" top="156" type="Window" width="11052">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
@@ -41,7 +41,7 @@
    </PIN>
    </NODE>
    <NODE systemname="ASPECTRATIO (TRANSFORM)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="6000" top="9015" width="100" height="100">
+   <BOUNDS type="Node" left="3732" top="6711" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Aspect Width" visible="1" slicecount="1" values="256">
    </PIN>
@@ -293,7 +293,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4893" top="6777" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -305,7 +305,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Enabled">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Enabled">
@@ -522,7 +522,7 @@
    <LINKPOINT x="3190" y="5645">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="HitBoxes" filename="Subpatches\HitBoxes.v4p" nodename="Subpatches\HitBoxes.v4p" componentmode="InAWindow" id="156">
+   <NODE systemname="HitBoxes" filename="Subpatches\HitBoxes.v4p" nodename="Subpatches\HitBoxes.v4p" componentmode="Hidden" id="156">
    <BOUNDS type="Node" left="5235" top="7635" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="12864" top="3036" width="8772" height="7944">
@@ -631,7 +631,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3264" top="11940" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="408" top="288" width="8952" height="9744">
+   <BOUNDS type="Window" left="288" top="1536" width="8784" height="7392">
    </BOUNDS>
    <PIN pinname="Projection" visible="1">
    </PIN>
@@ -666,12 +666,154 @@
    </LINK>
    <LINK srcnodeid="153" srcpinname="View" dstnodeid="162" dstpinname="View">
    </LINK>
-   <LINK srcnodeid="134" srcpinname="Layer" dstnodeid="162" dstpinname="Layers">
-   </LINK>
    <LINK srcnodeid="162" srcpinname="Actual Backbuffer Width" dstnodeid="38" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="162" srcpinname="Actual Backbuffer Width" dstnodeid="23" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="162" srcpinname="Actual Backbuffer Height" dstnodeid="37" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="163">
+   <BOUNDS type="Node" left="2832" top="9492" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2832" top="9492" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14784" top="4104" width="6216" height="5064">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="134" srcpinname="Layer" dstnodeid="163" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="DX9Texture (EX9.Texture)" filename="" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="164">
+   <BOUNDS type="Node" left="4512" top="10032" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4512" top="10032" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="163" srcpinname="EX9 Out" dstnodeid="164" dstpinname="Source">
+   </LINK>
+   <NODE systemname="Polygon (EX9.Geometry 2d)" nodename="Polygon (EX9.Geometry 2d)" componentmode="Hidden" id="165" filename="%VVVV%\addonpack\lib\nodes\plugins\2dMeshNodes.dll">
+   <BOUNDS type="Node" left="3492" top="10704" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Vertex Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="VerticesXY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Constant (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\Constant.fx" nodename="Constant (EX9.Effect)" componentmode="Hidden" id="166">
+   <BOUNDS type="Node" left="3408" top="11172" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="166" srcpinname="Layer" dstnodeid="162" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="165" srcpinname="Output" dstnodeid="166" dstpinname="Mesh">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="167">
+   <BOUNDS type="Node" left="732" top="7800" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="732" top="7800" width="1320" height="1500">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="8" values="1,1,1,-1,-1,-1,-1,1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="167" srcpinname="Y Output Value" dstnodeid="165" dstpinname="VerticesXY">
+   </LINK>
+   <NODE systemname="TransformTexture (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\TransformTexture\TransformTexture (EX9.Texture Filter).v4p" nodename="TransformTexture (EX9.Texture Filter)" componentmode="Hidden" id="168">
+   <BOUNDS type="Node" left="4620" top="10536" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="164" srcpinname="Texture Out" dstnodeid="168" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="168" srcpinname="Output" dstnodeid="166" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Homography (Transform 2d)" nodename="Homography (Transform 2d)" componentmode="Hidden" id="171">
+   <BOUNDS type="Node" left="5700" top="10008" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Original Points XY" visible="1">
+   </PIN>
+   <PIN pinname="Screen Space Points XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="171" srcpinname="Transform Out" dstnodeid="168" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="167" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Original Points XY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="172">
+   <BOUNDS type="Node" left="8076" top="7440" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8076" top="7440" width="1320" height="1500">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="8" values="1,1,1,-1,-1,-1,-1,1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="MappingRatio">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="172" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Screen Space Points XY">
+   </LINK>
+   <NODE systemname="Scale (Transform Vector)" nodename="Scale (Transform Vector)" componentmode="Hidden" id="173">
+   <BOUNDS type="Node" left="3732" top="9960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="3" visible="1" values="1.37,1.37,1.37">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="173" srcpinname="Transform Out" dstnodeid="166" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="174">
+   <BOUNDS type="Node" left="4188" top="8640" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4188" top="8640" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1.29">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Scale">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="174" srcpinname="Y Output Value" dstnodeid="173" dstpinname="XYZ">
    </LINK>
    </PATCH>
