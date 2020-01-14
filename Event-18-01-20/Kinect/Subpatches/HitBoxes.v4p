@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\Subpatches\HitBoxes.v4p" scrollx="312" scrolly="0">
+   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Event-18-01-20\Kinect\Subpatches\HitBoxes.v4p" scrollx="2700" scrolly="0">
    <NODE systemname="Constant (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\Constant.fx" nodename="Constant (EX9.Effect)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2400" top="3525" width="100" height="100">
    </BOUNDS>
@@ -19,14 +19,14 @@
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="2400" top="4125" width="750" height="240">
+   <BOUNDS type="Box" left="2400" top="5850" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2400" top="4125" width="750" height="240">
+   <BOUNDS type="Node" left="2400" top="5850" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="1" dstpinname="Input Node">
-   </LINK>
-   <BOUNDS type="Window" left="12864" top="3036" width="8772" height="7944">
+   <BOUNDS type="Window" left="18315" top="3555" width="8760" height="7935">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -317,7 +317,7 @@
    </BOUNDS>
    <PIN pinname="Width" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="7" visible="1">
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="7">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -365,5 +365,105 @@
    <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Spread Count">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
+   <BOUNDS type="Node" left="8430" top="15" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8430" top="15" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="showBoxIDs">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Text (EX9)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Text (EX9)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="6420" top="3495" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6420" top="3495" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="310">
+   </PIN>
+   <PIN pinname="Width [px] (Multiline Mode)" slicecount="1" values="146">
+   </PIN>
+   <PIN pinname="Text" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="3465" top="4500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Layer" dstnodeid="1" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="8160" top="2460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" visible="1" values="-0.43">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" visible="1" values="0.1">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" visible="1" values="0.1">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1" slicecount="6" values="-19.1405410704072,-11.5513790302499,-3.86166466921386,3.86166466921386,11.5513790302499,19.1405410704072">
+   </PIN>
+   <PIN pinname="Rotate" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TranslateZ" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="36" dstpinname="TranslateY">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="36" dstpinname="TranslateX">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Transform Out" dstnodeid="34" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="9360" top="825" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname=".. To [" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="37" dstpinname=".. To [">
+   </LINK>
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="8685" top="1635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="SubType" slicecount="1" values="|Integer (MinInt .. MaxInt)|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="38" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="34" dstpinname="Text">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Enabled">
    </LINK>
    </PATCH>

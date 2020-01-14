@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\Sincap\Documents\GitHub\noldeni\space-event\Sinan\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="0" scrolly="2712">
+   <PATCH nodename="C:\Users\Admin\Documents\GitHub\noldeni\space-event\Event-18-01-20\Kinect\_root_SpectralKinect.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\UBERACT-UBE\UBE-NOK-NOKIA\UP0013-Nokia\_root_LightRider.v4p" systemname="_root_LightRider" scrollx="0" scrolly="2085">
    <BOUNDS height="12072" left="8988" top="156" type="Window" width="11052">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
@@ -74,7 +74,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="InAWindow" id="43">
+   <NODE systemname="Skeleton" filename="Subpatches\Skeleton.v4p" nodename="Subpatches\Skeleton.v4p" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="4491" top="2496" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
@@ -514,10 +514,10 @@
    <LINKPOINT x="3646" y="5845">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="HitBoxes" filename="Subpatches\HitBoxes.v4p" nodename="Subpatches\HitBoxes.v4p" componentmode="Hidden" id="156">
+   <NODE systemname="HitBoxes" filename="Subpatches\HitBoxes.v4p" nodename="Subpatches\HitBoxes.v4p" componentmode="InAWindow" id="156">
    <BOUNDS type="Node" left="5919" top="7935" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="12864" top="3036" width="8772" height="7944">
+   <BOUNDS type="Window" left="18315" top="3555" width="8760" height="7935">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -530,6 +530,8 @@
    <PIN pinname="Y Translate" slicecount="1" values="0">
    </PIN>
    <PIN pinname="X Translate" slicecount="1" values="0.21">
+   </PIN>
+   <PIN pinname="showBoxIDs" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output" dstnodeid="41" dstpinname="Input">
@@ -663,7 +665,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3840" top="9600" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="15372" top="3528" width="6216" height="5064">
+   <BOUNDS type="Window" left="21465" top="1725" width="6210" height="5055">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -869,7 +871,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Enable FrameBorder|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Show / Hide FrameBorder|">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
@@ -877,5 +879,29 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="178" srcpinname="Y Output Value" dstnodeid="176" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="179" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6900" top="5460" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6900" top="5460" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Show / Hide BoxIDs|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="156" dstpinname="showBoxIDs">
    </LINK>
    </PATCH>
